@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electric Store & Services</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="image/logo_saurabh.png" alt="Logo">
+      <h1>National Electric Store & Services</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#products"><font size="3" color="blue">Products</font></a></li>
+        <li><a href="#services"><font size="3" color="blue">Services</font></a></li>
+        <li><a href="#contact"><font size="3" color="blue">Contact</font></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Products Section -->
+    <section id="products" class="product-section">
+      <!--<h2>Our Products</h2>-->
+      <div id="countdown" class="timer">Offer ends in: 02:00:00</div>
+      <div class="product-list">
+        <!-- Products will be dynamically loaded here -->
+      </div>
+    </section>
+        
+
+    <!-- Services Section -->
+    <section class="maintenance-services" id="services">
+      <h2>Our Maintenance Services</h2>
+      <div class="service-list">
+        <!-- Service Card 1 -->
+        <div class="service-card">
+          <img src="image/electrician servise.webp" alt="Electrician Service">
+          <h3>Electrician</h3>
+          <p>Expert electricians for all your electrical needs.</p>
+          <button onclick="openServiceForm()">Book Now</button>
+        </div>
+    
+        <!-- Service Card 2 -->
+        <div class="service-card">
+          <img src="image/plumbing.jpg" alt="Plumbing Service">
+          <h3>Plumbing</h3>
+          <p>Quick and reliable plumbing services at your doorstep.</p>
+          <button onclick="openServiceForm()">Book Now</button>
+        </div>
+    
+        <!-- Service Card 3 -->
+        <div class="service-card">
+          <img src="image/ac.jpg" alt="AC Maintenance">
+          <h3>AC Maintenance</h3>
+          <p>Keep your AC running smoothly with our services.</p>
+          <button onclick="openServiceForm()">Book Now</button>
+        </div>
+    
+        <!-- Service Card 4 -->
+        <div class="service-card">
+          <img src="image/motor_repair.jpg" alt="Appliance Repair">
+          <h3>All types Repair</h3>
+          <p>Quick and reliable repair services for all home appliances, electronics, and machinery.</p>
+          <button onclick="openServiceForm()">Book Now</button>
+        </div>
+        
+
+
+
+      </div>
+    </section>
+
+    
+                      <!-- <button onclick="openServiceForm()">Book a Service</button>   ye book wali bttton hai-->
+
+      <div id="serviceFormContainer" style="display: none;">
+        <h3>Book a Service</h3>
+        <form id="serviceForm">
+          <label for="name">Name:</label>
+          <input type="text" id="serviceName" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="serviceEmail" name="email" required>
+          <label for="service">Service Details:</label>
+          <textarea id="serviceDetails" name="service" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required style="width: 320px; height: 30px;">
+        <label for="number">Mobile Number:</label>
+        <input type="number" id="mobile number" placeholder="Your Mobile number" required style="width: 300px; height: 30px;">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Your Query" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <section id="feedback" class="customer-feedback">
+    <h2>Customer Feedback</h2>
+    
+    <!-- Feedback Form -->
+    <div class="feedback-form">
+      <h3>Leave Your Feedback</h3>
+      <form id="feedbackForm">
+        <input type="text" id="customerName" placeholder="Your Name" required>
+        <input type="number" id="customerEmail" placeholder="Your mobile number" required>
+        <textarea id="customerMessage" placeholder="Your Feedback" rows="4" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    
+    <!-- Feedback Display -->
+    <div class="feedback-display">
+      <h3>What Our Customers Say</h3>
+      <div class="feedback-list">
+        <!-- Feedback cards will load here dynamically -->
+      </div>
+    </div>
+  </section>
+  
+  
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Electric Store & Services. All rights reserved.</p>
+    <div class="contact-info">
+      <p>📞 Contact No: +91-7485065515</p>
+      <p>📧 Email: info@nationalelectric.com</p>
+    </div>
+    <div class="social-media">
+      <a href="#" target="_blank">Facebook</a>
+      <a href="#" target="_blank">Twitter</a>
+      <a href="#" target="_blank">Instagram</a>
+      <a href="#" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
